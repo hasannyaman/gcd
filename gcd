@@ -1,0 +1,21 @@
+import java.util.*;
+public class gcd {
+	public static void main(String[] args) {
+		Scanner console=new Scanner(System.in);
+		System.out.println("This program produces greatest common divisor of 2 given numbers.");
+		System.out.print("Write first number: ");
+		int input1=console.nextInt();
+		System.out.print("Write second number: ");
+		int input2=console.nextInt();
+
+		int test=0;
+		int x=Math.min(input1, input2);
+		for(int i=1;i<=x;i++) {
+			if(input1%i==0 && input2%i==0) {
+				test=i;
+			}
+		}
+		System.out.println("Grearest common divisor of "+input1+" and "+input2+" is: "+test);
+	}
+
+}
